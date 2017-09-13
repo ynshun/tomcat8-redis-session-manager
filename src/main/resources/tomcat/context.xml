@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context>
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+    <WatchedResource>${catalina.base}/conf/web.xml</WatchedResource>
+	<Valve className="com.ynshun.tomcat8.redissession.RedisSessionHandlerValve" />
+	<Manager className="com.ynshun.tomcat8.redissession.RedisSessionManager" host="10.117.230.15" port="6379" database="0" maxInactiveInterval="60" />
+</Context>
